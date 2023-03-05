@@ -1,0 +1,31 @@
+body{
+    background-color: tomato;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    border:3px solid black;
+    background-color: #F6DEB3;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.teal{
+    border-color: white;
+    background-color: teal;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.second{
+    border-style: dashed;
+    width: 200px;
+}
