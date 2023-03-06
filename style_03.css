@@ -1,0 +1,81 @@
+body{
+    background-color: antiquewhite;
+    height: 140vh;
+    display: flex; /*block이어도 옆에 옴*/
+    flex-direction: column;
+    align-items: center;
+
+    border: 3px red dashed;
+}
+h1{
+    margin-bottom:5%;
+
+    border: 3px gray dashed; /*h1은 block*/
+}
+section{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 80%;
+
+    border: 3px orange dashed;
+}
+article{
+    background-color: white;
+    width: 30%;
+    height: 46%;
+    margin: 2%;
+
+    position:relative;
+
+    border: 3px violet dashed;
+}
+.color{
+    width: 94%;
+    height: 96%;
+    margin: 3%;
+    background-color: gray;
+
+    border: 3px blue dashed;
+}
+.description
+{
+    background-color: white;
+    margin-top:10%;
+    height: 30%;
+
+    position: relative;
+
+    border: 3px aqua dashed;
+}
+
+/*Position*/
+h2{
+    position: relative;
+    left: 3%;
+    font-size: 150%;
+
+    border: 3px gray dashed;
+}
+h3{
+    position: relative;
+    left: 3%;
+    font-size: 100%;
+
+    border: 3px gray dashed;
+}
+
+/*Pseudo Selector*/
+article:nth-child(1) .color{
+    background-color: tomato;
+}
+article:nth-child(2) .color{
+    background-color: teal;
+}
+article:nth-child(3) .color{
+    background-color: burlywood;
+}
+article:nth-child(4) .color{
+    background-color: thistle;
+}
