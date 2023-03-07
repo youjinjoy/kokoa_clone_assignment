@@ -1,0 +1,74 @@
+body{
+    background-color: #6BBCBE;
+    height:100vh;
+    width:100vw;
+
+    display: flex;
+    flex-direction: column; /*circle section과 rectangle section을 세로로 나열*/
+    align-items: center;
+    justify-content: center;
+}
+/*section = section class="circle" + section class="rectangle"*/
+section{
+    width:10vw;
+    height:30vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*space-between 사용해야 circles과 rectangles의 시작점과 끝점이 동일*/
+}
+/*div = 3 circles + 5 rectangles
+div가 가지고 있는 공통 특성 (1)배경색 white (2)너비가 10px*/
+div{
+    background-color: white;
+    width: 10px;
+}
+/*circles만 가지고 있는 특성*/
+.circle div{
+    height: 10px;
+    border-radius: 50%;
+}
+/*rectangles만 가지고 있는 특성*/
+.rectangle div{
+    height: 40px;
+}
+
+/*Circles를 360도 회전시키는 애니메이션*/
+@keyframes RotateCircles{
+    0%{transform: rotateZ(0);}
+    40%{transform: rotateZ(180deg);}
+    50%{transform: rotateZ(180deg);}
+    90%{transform: rotateZ(360deg);}
+    100%{transform: rotateZ(360deg);}
+}
+.circle{
+    animation: RotateCircles 2s ease infinite
+}
+/*Rectangles를 확대 및 원래 크기로 반복하는 애니메이션*/
+@keyframes WaveRectangles{
+    0%{transform: scaleY(100%);}
+    20%{transform: scaleY(200%);}
+    40%{transform: scaleY(100%);}
+    60%{transform: scaleY(100%);}
+    80%{transform: scaleY(100%);}
+    100%{transform: scaleY(100%);}
+}
+.rectangle div:nth-child(1){
+    animation: WaveRectangles 1s ease-in-out infinite;
+    animation-delay: 0s;
+}
+.rectangle div:nth-child(2){
+    animation: WaveRectangles 1s ease-in-out infinite;
+    animation-delay:0.1s;
+}
+.rectangle div:nth-child(3){
+    animation: WaveRectangles 1s ease-in-out infinite;
+    animation-delay:0.2s;
+}
+.rectangle div:nth-child(4){
+    animation: WaveRectangles 1s ease-in-out infinite;
+    animation-delay:0.3s;
+}
+.rectangle div:nth-child(5){
+    animation: WaveRectangles 1s ease-in-out infinite;
+    animation-delay:0.4s;}
