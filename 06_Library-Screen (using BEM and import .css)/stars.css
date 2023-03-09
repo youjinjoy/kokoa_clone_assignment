@@ -1,0 +1,34 @@
+/* stars.css: 책마다 별점 평가를 위한 파일 */
+
+/* 기본 별 색깔 */
+.content__information--stars{
+    color: var(--main-color);
+    background-color: inherit;
+
+    padding: 0;
+}
+
+/* Best Book of Last Year 별점*/
+.content__information--stars:nth-child(1){
+}
+
+/* Ranking of books read top 1 별점*/
+.content__main--list:nth-child(1) .content__information--stars .fa-star:nth-child(5){
+}
+
+/* Ranking of books read top 2 별점*/
+.content__main--list:nth-child(2) .content__information--stars .fa-star:nth-child(5){
+
+}
+
+/* Ranking of books read top 3 별점*/
+.content__main--list:nth-child(3) .content__information--stars .fa-star:nth-child(5){
+    color: rgba(128,128,128,0.7);
+}
+/* Ranking of books read top 4 별점*/
+.content__main--list:nth-child(4) .content__information--stars .fa-star:nth-child(5){
+    color: rgba(128,128,128,0.7);
+}
+.content__main--list:nth-child(4) .content__information--stars .fa-star:nth-child(4){
+    color: rgba(128,128,128,0.7);
+}

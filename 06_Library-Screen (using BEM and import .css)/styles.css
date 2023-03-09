@@ -1,0 +1,24 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;800&display=swap');
+/*Open Sans Light 300, Regular 400, Medium 500, ExtraBold 800*/
+/*Noto Sans Korean Light 300, Regular 400, Medium 500, Bold 700*/
+@import "variables.css";
+/* --main-color 저장해놓음 */
+
+@import "header.css";
+@import "main.css";
+@import "stars.css";
+
+html{
+    display:flex;
+    justify-content: center; /* 모든 body 내 컨텐츠가 윈도우 중간에 오도록*/
+}
+body{
+    font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
+    word-break: keep-all; /*단어 기준으로 줄바꿈. 책 제목이 긴 경우를 대비*/
+
+    width:340px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+}

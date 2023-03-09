@@ -1,0 +1,124 @@
+/* content:nth-child(1) 및 (1),(2),(3)에 전체적으로 적용되는 요소들*/
+.content{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 5px 15px;
+}
+.content__title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.content__main--layout01{
+    display: flex;
+}
+.content__image{
+    box-sizing: border-box;
+
+    width: 120px;
+    height: 160px;
+    border: rgba(128, 128, 128, 0.3) solid 2px;
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.content__information{
+    width: 180px;
+}
+.content__information *{
+    margin-bottom: 10px;
+}
+.content__information--title{
+    font-size: 17px;
+    font-weight: 800;
+}
+.content__information--title{
+    font-size: 16px;
+    font-weight: 500;
+}
+.content__information--author{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* content:nth-child(2)에 적용되는 요소들*/
+.content__information--genre button{
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+    font-size: 12px;
+    
+    margin-right: 3px;
+    padding: 3px 10px;
+}
+.content__information--btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    /*저장 버튼 및 Book Now 버튼 위치 조정*/
+    position: relative;
+    bottom: 10px;
+}
+.content__information--btn button:first-child{
+    background-color: var(--main-color);
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    /*버튼 내의 아이콘 위치 조정*/
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.content__information--btn button:last-child{
+    background-color: black;
+    color: white;
+
+    width: 100px;
+    border-radius:3px;
+}
+
+.content__main--layout02{
+    display: flex;
+}
+.content__main--list{
+    display: flex;
+    flex-direction: column;
+}
+.content__main--layout02 .content__image{ /*전체 .content_image와 다른 점*/
+    width: 80px;
+    height: 120px;
+
+    margin-bottom: 10px;
+}
+.content__information--stars{
+    margin-right: 20px;
+}
+.content__main--layout02 .fa-star{
+    margin-bottom: 25px;
+}
+
+.content:nth-child(2){
+    overflow-x:scroll;
+}
+
+/* content:nth-child(3)에 적용되는 요소들*/
+.content:nth-child(3) .content__title{
+    margin-top: 30px;
+}
+.content__information--description{
+
+    height: 125px;
+
+    margin-top: 20px;
+
+    font-size: 12px;
+    font-weight: 300;
+
+    line-height: 150%;
+
+    overflow-y:scroll;
+}
