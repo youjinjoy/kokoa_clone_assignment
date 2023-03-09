@@ -1,0 +1,196 @@
+@import "reset10.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');/*Open Sans Light 300, Regular 400, Medium 500, ExtraBold 800*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+    border: 5px solid #02C6AD;
+    padding: 45px 25px;
+}
+
+/*header part*/
+.playlist-header{
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist-header__column{
+    width:33%;  /* Playlist-header 요소를 중심에 놓기 위함*/
+}
+.playlist-header__exit-button{
+    margin: 0;
+    padding: 0;
+    transform: scale(1.5) scaleX(1.2); /* exit 버튼 사이즈 조절 */
+}
+
+.playlist-header__column:nth-child(2) span{
+
+    text-align: center;
+    font-size: 25px;
+    font-weight:900;
+
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-header__exit-button:hover{
+    background-color: gray;
+}
+
+/*selected-song part*/
+.selected-song{
+    margin-top: 45px;
+    display: flex;    
+}
+.selected-song__album-cover{
+    width: 120px;
+    height: 120px;
+    border: 3px black solid;
+    border-radius: 12px;
+    background-color: #FFBC24;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selected-song__album-cover .fa-image{
+    transform: scale(3) scaleY(1.1);
+    color: white;
+}
+
+.selected-song__info{
+    margin-top: 5px;
+    margin-left: 15px;
+
+    display:flex;
+    flex-direction: column;
+}
+.selected-song__info--nameofsong{
+    width: 100px;
+    line-height: 40px;
+
+    font-size: 30px;
+    font-weight: 900;
+}
+.selected-song__info--nameofsinger{
+    margin-top: 15px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: rgba(0,0,0,0.8);
+}
+
+/*playmusic-section*/
+.playmusic-section{
+    margin-top: 45px;
+
+    display: flex;
+}
+
+.playmusic-section__play-button{
+height: 60px;
+width: 160px;
+border: 3px black solid;
+border-radius: 12px;
+border-bottom-width: 6px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 20px;
+font-weight: 600;
+}
+.playmusic-section__play-button span{
+    margin-left: 10px;
+}
+
+.playmusic-section__luv-it-button
+{
+margin-left: 20px;
+height: 58px;
+width: 60px;
+border: 3px black solid;
+border-radius: 50%;
+border-bottom-width: 6px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.playmusic-section .fa-heart{
+    transform: scale(2);
+}
+
+.playmusic-section__add-button
+{
+margin-left: 20px;
+height: 58px;
+width: 60px;
+border: 3px black solid;
+border-radius: 50%;
+border-bottom-width: 6px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.playmusic-section .fa-plus{
+    transform: scale(1.5);
+}
+
+.playmusic-section button:hover{
+    background-color: lavender;
+    transform: scale(1.1);
+}
+
+/*playlist-main*/
+.playlist-main{
+    display: flex;
+    flex-direction: column;
+}
+.playlist-main__list{
+    margin-top: 40px;
+    display:flex;
+}
+
+.playlist-main__album-cover{
+    height: 50px;
+    width: 50px;
+    border: 3px black solid;
+    border-radius: 10px;
+    background-color: gray;
+}
+.playlist-main__info{
+    margin-top: 5px;
+    margin-left: 15px;
+    display:flex;
+    flex-direction: column;
+}
+
+.playlist-main__title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.playlist-main__singer{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.7);
+}
+
+.playlist-main__list:nth-child(1) .playlist-main__album-cover{
+    background-color: #F85A2A;
+}
+.playlist-main__list:nth-child(2) .playlist-main__album-cover{
+    background-color: #FF89BB;
+}
+.playlist-main__list:nth-child(3) .playlist-main__album-cover{
+    background-color: #1847E4;
+}
+.playlist-main__list:nth-child(4) .playlist-main__album-cover{
+    background-color: #02C6AD;
+}
